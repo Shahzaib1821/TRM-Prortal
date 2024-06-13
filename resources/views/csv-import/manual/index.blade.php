@@ -10,7 +10,8 @@
                             <div class="row justify-content-center mt-3">
                                 <h4 class="card-title">Scrub Numbers from the master database</h4>
                                 <div class="col-lg-8">
-                                    <form action="{{ route('csv-check.scrub') }}" method="post" id="uploadForm" class="m-3">
+                                    <form action="{{ route('csv-check.scrub') }}" method="post" id="uploadForm"
+                                        class="m-3">
                                         @csrf
                                         <div class="file-upload-contain mb-4 mt-2">
                                             <label for="number">Enter Single Number</label>
@@ -25,9 +26,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
         </div>
     </section>
 @endsection

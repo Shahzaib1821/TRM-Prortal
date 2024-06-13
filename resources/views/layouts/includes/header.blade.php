@@ -32,12 +32,13 @@
             <div class="d-flex">
 
                 <div class="dropdown d-inline-block">
-                    <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                    <button type="button" class="btn header-item waves-effect d-flex justify-content-between align-items-center w-xl" id="page-header-user-dropdown"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="rounded-circle header-profile-user"
-                            src="{{ asset('assets/images/users/avatar-1.jpg') }}" alt="Header Avatar">
-                        <span class="d-none d-xl-inline-block ms-1" key="t-henry">
-                           Henery
+                        <div class="rounded-3 header-profile-user d-flex justify-content-center align-items-center">
+                            <i class="fa fa-user-alt"></i>
+                        </div>
+                        <span class="d-none d-xl-inline-block ms-1 text-capitalize" key="t-henry">
+                          {{ Auth::user()->name}}
                         </span>
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                     </button>

@@ -81,55 +81,6 @@
                                     </div>
                                 </div>
                             </form>
-                            {{-- <div class="form_wrapper">
-                                <div class="form_container">
-                                    <div class="row">
-                                        <div class="d-flex justify-content-center align-items-center m-auto text-center">
-                                            <form action="{{ route('csv-import.store') }}" method="post"
-                                                enctype="multipart/form-data">
-                                                @csrf
-                                                <div class="row justify-content-center">
-                                                    <div class="col-lg-12">
-                                                        <div class="file-upload-contain mb-5">
-                                                            <label for="column_selection">Select Columns</label>
-                                                            <select name="column_selection" class="form-control"
-                                                                id="column_selection" required="">
-                                                                <option value="1">Column 1</option>
-                                                                <option value="2">Column 2</option>
-                                                                <option value="3">Column 3</option>
-                                                                <option value="4">Column 4</option>
-                                                                <option value="5">Column 5</option>
-                                                                <option value="6">Column 6</option>
-                                                                <option value="7">Column 7</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="file-upload-contain mb-5">
-                                                            <label for="csvfile">CSV File</label>
-                                                            <input type="file" class="form-control" name="csvfile"
-                                                                accept=".csv" multiple required />
-                                                        </div>
-                                                        <div class="file-upload-contain mb-5">
-                                                            <label for="category">Assign Category</label>
-                                                            <select name="category" class="form-control" required="">
-                                                                <option value="">Select Post Category Type</option>
-                                                                @foreach ($categories as $category)
-                                                                    <option value="{{ $category }}">{{ $category }}
-                                                                    </option>
-                                                                @endforeach
-                                                            </select>
-                                                        </div>
-                                                        <input class="button" type="submit" class="btn" name="submit"
-                                                            value="Check for Duplicates" />
-                                                    </div>
-                                                </div>
-                                            </form>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                     <div class="form_wrapper">

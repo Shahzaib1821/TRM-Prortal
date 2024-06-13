@@ -57,16 +57,34 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="far fa-file-alt"></i>
+                            <span key="t-dashboards">Scrub Files</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li>
+                                <a href="{{ route('scanForm') }}" class="waves-effect">
+                                    <span>Scan Numbers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('csv-scanned-numbers') }}" class="waves-effect">
+                                    <span>Result</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
                     <li>
                         <a href="{{ route('csv-import.index') }}" class="waves-effect">
-                            <i class="fa fa-file"></i>
+                            <i class="fa fa-file-csv"></i>
                             <span>CSV Import</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('csv-check.index') }}" class="waves-effect">
-                            <i class="fa fa-file"></i>
+                            <i class="fa fa-file-csv"></i>
                             <span>CSV Manual Check</span>
                         </a>
                     </li>

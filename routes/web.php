@@ -40,6 +40,12 @@ Route::middleware('auth')->group(function () {
 
     Route::get('csv-import', [CsvImportController::class, 'index'])->name('csv-import.index');
     Route::post('csv-import/store', [CsvImportController::class, 'store'])->name('csv-import.store');
+
+    Route::get('/scrub-import', [CsvScrubController::class, 'import'])->name('csv-check.import');
+    // Route::post('csv-import/store', [CsvScrubController::class, 'checkDuplicates'])->name('csv-import.checkDuplicates');
+    Route::get('/scan', [CsvScrubController::class, 'import'])->name('scanForm');
+    Route::post('/scan', [CsvScrubController::class, 'checkDuplicates'])->name('scan');
+    Route::get('/scanned-numbers', [CsvScrubController::class, 'results'])->name('csv-scanned-numbers');
 });
 
 //user routes
